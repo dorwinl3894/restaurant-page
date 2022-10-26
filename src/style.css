@@ -77,7 +77,12 @@ body {
 
 .section-paragraph, .section-title {
     width: clamp(300px,50%,700px);
-    color: rgb(245, 245, 245);
     letter-spacing: 0.1rem;
     line-height: 1.25rem;
+}
+.section-paragraph {
+    color: rgb(214, 214, 214);
+}
+.section-title {
+    color: rgb(245, 245, 245);
 }
