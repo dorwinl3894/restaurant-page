@@ -1,4 +1,4 @@
-const brudda = "yerrr";
+
 const content = document.getElementById('content');
 const homeButton = document.getElementById('home-button');
 const contactButton = document.getElementById('contact-button');

@@ -2,6 +2,8 @@ import './style.css';
 import {clearContent} from './clearContent';
 import { createHomeContent } from './home';
 import {createGalleryContent} from './gallery';
+import {createContactContent} from './contact';
+
 
 createHomeContent();
 
@@ -30,6 +32,7 @@ galleryButton.addEventListener('click',() => {
 
 contactButton.addEventListener('click',() => {
     clearContent();
+    createContactContent();
     console.log("Clicked");
 })
 

@@ -109,3 +109,14 @@ body {
     transform: scale(1.1);
     box-shadow: rgb(255, 216, 44) 0px 0px 18px ;
 }
+
+.contact-section-title {
+    text-align: center;
+}
+a.section-paragraph {
+    text-decoration: none;
+    text-align: center;
+}
+a:hover {
+    color: rgb(255, 216, 44);
+}
