@@ -37,7 +37,7 @@ body {
     letter-spacing: 0.2rem;
     font-family: Poppins;
     font-size: 1.2rem;
-    color: rgb(245, 245, 245);
+    color: rgb(207, 207, 207);
 
     background-color: #292929;
     border: none;
@@ -48,7 +48,11 @@ body {
     background-color:rgb(245, 245, 245);
     color: #3d3d3d;
 }
-
+.header-active-link {
+    font-weight: bold;
+    color: white;
+    pointer-events: none;
+}
 #main-section {
     background-color: #242424;
     
@@ -57,26 +61,27 @@ body {
     align-items: center;
     gap: 1.5rem;
 
-    margin: 3rem auto 0rem auto;
-    padding: 1rem;
-    width: 80%;
+    margin: 3rem auto 3rem auto;
+    padding: 2rem 1rem;
+    width: min(80%,1000px);
     border-radius: 1rem;
 }
-
+.section-paragraph, .section-title, .page-title, #home-img{
+    width: clamp(300px,50%,700px);
+}
 .page-title {
-    font-family: Poppins;
+    font-family: Glamor;
     font-size: 2.1rem;
     color: rgb(245, 245, 245);
     letter-spacing: 0.2rem;
+    text-align: center;
 }
 
 #home-img {
-    width: clamp(300px,50%,700px);
     box-shadow: rgb(255, 216, 44) 0px 0px 12px ;
 }
 
 .section-paragraph, .section-title {
-    width: clamp(300px,50%,700px);
     letter-spacing: 0.1rem;
     line-height: 1.25rem;
 }
@@ -85,4 +90,22 @@ body {
 }
 .section-title {
     color: rgb(245, 245, 245);
+}
+
+#gallery-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-grid-img {
+    width: 100%;
+    height: auto;
+    transition: 0.25s;
+}
+.gallery-grid-img:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(255, 216, 44) 0px 0px 18px ;
 }
